@@ -1,4 +1,4 @@
-# Comprehensive Technical Reference: Stateful/Stateless K8s CI/CD POC
+# Reference: Stateful/Stateless K8s CI/CD POC
 
 ## 1. Project Overview & Architecture
 This project demonstrates a complete CI/CD lifecycle for a multi-tier application deployed to Google Kubernetes Engine (GKE) from a local Mac development environment.
@@ -92,7 +92,9 @@ Runs kubectl apply -f on the stateful, then stateless directories.
 
 Cleanup (Post): Removes the local Docker image to save Mac disk space.
 
-7. Verification Commands
+---
+
+## 7. Verification Commands
 To confirm the automated deployment succeeded from the local terminal:
 
 Get Cluster Access: gcloud container clusters get-credentials poc-cluster --zone us-central1-a --project devops-489010

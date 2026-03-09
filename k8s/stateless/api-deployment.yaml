@@ -14,13 +14,12 @@ spec:
     spec:
       containers:
         - name: catalog-api
-          # We will dynamically replace this placeholder tag in the Jenkins pipeline
           image: GCR_IMAGE_PLACEHOLDER 
           ports:
             - containerPort: 3000
           env:
             - name: DB_HOST
-              value: "postgres-service" # Connects to the StatefulSet Service
+              value: "postgres-service" 
             - name: DB_USER
               value: "postgres"
             - name: DB_PASSWORD
