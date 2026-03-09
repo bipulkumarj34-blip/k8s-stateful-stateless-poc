@@ -1,5 +1,7 @@
 pipeline {
     agent any
+
+    PATH = "/Users/bjha/.rd/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"
     
     environment {
         // Project specific variables
