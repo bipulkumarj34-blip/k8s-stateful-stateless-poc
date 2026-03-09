@@ -92,6 +92,7 @@ Runs kubectl apply -f on the stateful, then stateless directories.
 
 Cleanup (Post): Removes the local Docker image to save Mac disk space.
 
+```
 ---
 
 ## 7. Verification Commands
