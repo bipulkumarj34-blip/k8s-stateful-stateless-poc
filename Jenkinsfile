@@ -1,9 +1,12 @@
 pipeline {
     agent any
 
-    PATH = "/Users/bjha/.rd/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"
     
+
     environment {
+
+        PATH = "/Users/bjha/.rd/bin:/opt/homebrew/bin:/usr/local/bin:/usr/bin:/bin:${env.PATH}"
+        
         // Project specific variables
         PROJECT_ID = 'devops-489010'
         REGION = 'us-central1'
